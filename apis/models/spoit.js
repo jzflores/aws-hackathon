@@ -7,6 +7,9 @@ var Spotit = db.define('spotit', {
     primaryKey: true,
     autoIncrement: true
   },
+  event_id:{
+	  type: Sequelize.STRING
+  },
   lat: {
     type: Sequelize.STRING
   },
