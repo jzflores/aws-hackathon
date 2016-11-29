@@ -10,6 +10,7 @@
     "url": "git://github.com/"
   },
   "dependencies": {
+    "sequelize-cli": "2.4.0",
     "serverless-cors-plugin": "0.4.2",
     "serverless-optimizer-plugin": "2.5.1"
   },

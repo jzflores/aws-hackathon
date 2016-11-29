@@ -1,1 +1,4 @@
-{}
+{
+  "path": "/api/fia-webhook",
+  "method": "POST"
+}
