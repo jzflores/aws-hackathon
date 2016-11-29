@@ -10,8 +10,37 @@ module.exports.handler = function(event, context, cb) {
 
   if (event.path === '/api/fia-webhook' && event.method === 'POST') {
 
-    // db.query('SELECT * FROM events').then(function (events) {
-    //   console.log(JSON.stringify(events));
+    // Event
+    // .build({statusinfo: 'Actual', sender: 'a@a3.com'})
+    // .save()
+    // .then(function(o){
+    //   console.log("saved");
+    //   console.log(o.dataValues);
+    //   context.done(null, 'Success message');
+    // }).error(function(error) {
+    //   console.log("++++++++++");
+    //   context.fail(JSON.stringify({
+    //     status: 400,
+    //     errors: [JSON.stringify(error)],
+    //     message: 'Could not save'
+    //   }));
+    // });
+
+    // Event.findAll({
+    //   where: {
+    //     sender: 'a@a3.com'
+    //   }
+    // }).then(function (o) {
+    //   console.log(JSON.stringify(o));
+    //   context.done(null, JSON.stringify(o))
+    // })
+    // .error(function(error) {
+    //   console.log("++++++++++");
+    //   context.fail(JSON.stringify({
+    //     status: 400,
+    //     errors: [JSON.stringify(error)],
+    //     message: 'Could not save'
+    //   }));
     // });
 
   }

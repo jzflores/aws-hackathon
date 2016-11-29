@@ -4,8 +4,8 @@
   "description": "Serverless Lambda function for project: aws-hackathon",
   "customName": false,
   "customRole": false,
-  "handler": "handler.handler",
-  "timeout": 6,
+  "handler": "fia-webhook/handler.handler",
+  "timeout": 30,
   "memorySize": 1024,
   "authorizer": {},
   "custom": {

@@ -4,14 +4,15 @@ var getDBConnection = function () {
   var connection = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
-    dialect: 'mysql',
+    dialect: 'postgres',
     pool: {
-      max: 3,
+      max: 5,
       min: 0,
-      idle: 10000
+      idle: 10000,
+      maxIdleTime: 120000
     },
     define: {
-      timestamps: false // true by default
+      timestamps: false
     }
   });
   return connection
